@@ -57,13 +57,37 @@ document.addEventListener("DOMContentLoaded", () => {
   newChallengeButton.addEventListener("click", () => {
     // Add current challenge to history
     if (currentChallenge) {
-      const historyItem = document.createElement("li");
-      historyItem.textContent = `${currentChallenge.text} - ${currentChallenge.difficulty}`;
-      historyContainer.appendChild(historyItem);
+      addChallengeToHistory(currentChallenge);
     }
     loadChallenge();
   });
 
+  // Function to add a challenge to history and store it in local storage
+  function addChallengeToHistory(challenge) {
+    const historyItem = `${challenge.text} - ${challenge.difficulty}`;
+    const historyArray = JSON.parse(localStorage.getItem("challengeHistory")) || [];
+    historyArray.push(historyItem);
+
+    // Update local storage
+    localStorage.setItem("challengeHistory", JSON.stringify(historyArray));
+
+    // Display the updated history in the popup
+    displayHistory();
+  }
+
+  // Function to display history from local storage
+  function displayHistory() {
+    historyContainer.innerHTML = ""; // Clear existing items
+    const historyArray = JSON.parse(localStorage.getItem("challengeHistory")) || [];
+
+    historyArray.forEach((item) => {
+      const listItem = document.createElement("li");
+      listItem.textContent = item;
+      historyContainer.appendChild(listItem);
+    });
+  }
+
   // Initial load
   loadChallenge();
+  displayHistory(); // Display stored history on load
 });
