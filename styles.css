@@ -1,0 +1,58 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    width: 300px;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  h1 {
+    font-size: 1.5em;
+    color: #0073e6;
+  }
+  
+  #challenge-container {
+    margin-top: 15px;
+  }
+  
+  #challenge-text {
+    font-size: 1em;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  #difficulty-level, #timer, #hint-text {
+    font-size: 0.9em;
+    color: #666;
+    margin: 5px 0;
+  }
+  
+  #hint-button, #new-challenge {
+    background-color: #0073e6;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 0.9em;
+    border-radius: 5px;
+    margin: 5px 0;
+  }
+  
+  button:hover {
+    background-color: #005bb5;
+  }
+  
+  #history-container {
+    margin-top: 20px;
+    text-align: left;
+  }
+  
+  #challenge-history {
+    list-style-type: none;
+    padding: 0;
+  }
+  

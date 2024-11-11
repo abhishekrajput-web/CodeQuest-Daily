@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Daily Code Challenge</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Daily Code Challenge</h1>
+    <div id="challenge-container">
+      <p id="challenge-text">Loading today's challenge...</p>
+      <p id="difficulty-level">Difficulty: <span id="difficulty"></span></p>
+      <p id="hint-text" style="display: none;">Hint: <span id="hint-content"></span></p>
+      <button id="hint-button">Show Hint</button>
+      <p id="timer">Time Left: <span id="time">05:00</span></p>
+      <button id="new-challenge">Get New Challenge</button>
+    </div>
+    <div id="history-container">
+      <h2>Completed Challenges</h2>
+      <ul id="challenge-history"></ul>
+    </div>
+  </div>
+  <script src="background.js"></script>
+  <script src="popup.js"></script>
+</body>
+</html>
