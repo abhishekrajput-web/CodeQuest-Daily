@@ -1,6 +1,7 @@
 # CodeQuest-Daily (Google Extension)
 
 <h1 style="font-size:20px">Daily Code Challenges</h1>
+<p><a href="https://codequest-daily.netlify.app/">View The Live Website Deployment </a></p>
 
 <h2 style="font-size:20px">Technology used to make this website</h2>
 
@@ -14,7 +15,7 @@
 <h2 style="margin-top:20px"> Demo Extension Video</h2>
 
 
-
+https://codequest-daily.netlify.app/
 
 https://github.com/user-attachments/assets/e088c50e-e5ec-49ba-b782-cd0c89ec16c1
 
